@@ -274,4 +274,21 @@ ul {
   text-align: center;
 }
 
+.g-videos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem 0;
+  padding-top: 2rem;
+}
+  
+.g-h5{
+  color: #9B3F3F;
+}
+
+
+
+.g-footer{
+  margin-top: 2rem;
+}
 
