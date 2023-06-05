@@ -1,0 +1,594 @@
+// variables
+
+$gris-oscuro: #35363a;
+$gris-azulado: #3f474f;
+$gris-claro: #c7c8c9;
+$rojo-oscuro: #9b3f3f;
+$rojo-claro: #b65353;
+$negro-claro: #212529;
+$gris-333: #333;
+$fondo: #f1f1f1;
+
+
+// mixins
+@mixin centrar-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin centrar-texto{
+    text-align: center;
+}
+// seccion nuevos
+
+.grupo-de-productos{
+    padding: 0 5px;
+    .titulo-grupo{
+        margin: 0;
+    }
+    @media only screen and (max-width:860px){
+        .base-seccion{
+        grid-template-columns: repeat(6, minmax(auto, 1fr));
+    }
+    }
+    @media screen and (max-width:900) {
+        li a figure img{
+            width: 10vw;
+            border-radius: 3px;
+            border: 1px solid #333;
+        }
+    }
+    .base-seccion{
+        display: grid;
+        row-gap: 2rem;
+        padding: 0;
+        grid-template-columns: repeat(3, minmax(auto, 1fr));
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        list-style-type: none;
+        outline: none;
+        margin-top: 1rem;
+        gap: 0.5rem;
+
+
+        li a figure img{
+            border-radius: 5px;
+            border: 1px solid #333;
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: auto 0;
+            transition: 0.5s;
+            object-fit: cover;
+        }
+        li a figure img:hover{
+            transform: scale(1.1);
+        }
+        li a{
+            text-decoration: none;
+            color: #b34949;
+        }
+        
+    }
+    
+
+    .item-de-coleccion{
+        width: 30%;
+    }
+
+    @media screen and (min-width:768px){
+        .item-de-coleccion{
+        width: 15%;
+    }
+    }
+        
+    .grupo-head{
+        @include centrar-elemento();
+        margin-top: 1rem;
+        background-color: #9b3f3f;
+        color: #dedede;
+        padding: 0px 0;
+        border-radius: 10px;
+        width: 90vw;
+        margin: 10px auto;
+    }
+    .titulo-grupo{
+        font-size: 25px;
+    }
+}
+// seccion sugerencias
+.sugerencias{
+    margin: 10px 0;
+    width: 100%;
+    .seccion-1{
+        @media (min-width: 868px){
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        height: 45svh;
+    }
+    }
+    .seccion-2{
+        @media (min-width: 868px){
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+            height: 45svh;
+        }
+    }
+    
+    .caja-responsive{
+        background-image: url('../images/working/w33.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        border: #212529 1px solid;
+        padding: 10px;
+        white-space: normal;
+        overflow: visible;
+        margin: 1px;
+        @media (min-width: 868px){
+            height: 44.8svh;
+        }
+        .s-h5{
+            color: $negro-claro;
+            margin: 0 5vw 0;
+            max-width: fit-content;
+            background-color: #fff7;
+            border-radius: 2px;
+            padding-left:  5px;
+        }
+        .s-text{
+            color: $gris-claro;
+            margin: 20px 5vw 0   ;
+            font-size: 16px;
+            background-color: #3337;
+            border-radius: 3px;
+            padding: 0 5px;
+            max-width: fit-content;
+            text-align: center;
+
+        }
+        .s-span{
+            color: #341515;
+        }
+        .s-btn{
+            color: $rojo-claro;
+            background-color: $negro-claro;
+            border-radius: 0.3rem;
+            position: relative;
+            margin: 20px 8vw;
+            padding: 0 10px;
+            text-align: center;
+            border: 1px solid $gris-claro;
+            transition: all 0.3s;
+        }
+        .s-btn:hover{
+            transform: scale(1.2);
+            color: $gris-claro;
+        }
+    }
+    .caja-responsive-2{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url('../images/teclados/s2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        border: #212529 1px solid;
+        padding: 10px;
+        white-space: normal;
+        overflow: visible;
+        margin: 1px;
+        @media (min-width: 868px){
+            height: 44.8svh;
+        }
+        .s-h5-2{
+            color: $negro-claro;
+            margin: 0 5vw 0;
+            max-width: fit-content;
+            background-color: #fff7;
+            border-radius: 2px;
+            padding:  5px;
+            text-align: center;
+        }
+        .s-text-2{
+            color: $gris-claro;
+            margin-bottom: 70px;
+            font-size: 16px;
+            background-color: #3337;
+            max-width: fit-content;
+            border-radius: 3px;
+            
+        }
+        
+        .s-span{
+            color: #341515;
+        }
+        
+        .s-btn-2{
+            color: $rojo-claro;
+            background-color: $negro-claro;
+            border-radius: 0.3rem;
+            position: relative;
+            // margin: 10vh 35vw;
+            padding: 0 10px;
+            text-align: center;
+            border: 1px solid $gris-claro;
+            align-self: flex-end;
+            align-items: flex-end;
+            transition: all 0.3s;
+        }
+        .s-btn-2:hover{
+            transform: scale(1.2);
+            color: $gris-claro;
+        }
+    }
+    .caja-responsive-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('../images/working/w24.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        border: #212529 1px solid;
+        padding: 10px;
+        white-space: normal;
+        overflow: visible;
+        margin: 1px;
+        @media (min-width: 868px){
+            height: 44.8svh;
+        }
+        .s-h5-3{
+            color: $negro-claro;
+            margin: 0 5vw 0;
+            max-width: fit-content;
+            background-color: #fff7;
+            border-radius: 2px;
+            padding:  5px;
+        }
+        .s-text-3{
+            color: $gris-claro;
+            margin: 20px 5vw;
+            font-size: 16px;
+            background-color: #3337;
+            border-radius: 3px;
+            padding: 0 5px;
+            max-width: fit-content;
+        }
+        .s-span{
+            color: #341515;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-content: flex-end;
+            text-decoration: none;
+            align-items: flex-end;
+        }
+        .s-btn-3{
+            color: $rojo-claro;
+            background-color: $negro-claro;
+            border-radius: 0.3rem;
+            position: relative;
+            margin-top: 50px;
+            padding: 2px 10px;
+            text-align: center;
+            border: 1px solid $gris-claro;
+            transition: all 0.3s;
+        }
+        .s-btn-3:hover{
+            transform: scale(1.2);
+            color: $gris-claro;
+        }
+    }
+    .caja-responsive-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        background-image: url('../images/working/w22.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        border: #212529 1px solid;
+        padding: 10px;
+        white-space: normal;
+        overflow: visible;
+        margin: 1px;
+        @media (min-width: 868px){
+            height: 44.8svh;
+            .s-text-4{
+                margin-bottom: 70px;
+            }
+        }
+        .s-h5-4{
+            color: $negro-claro;
+            max-width: fit-content;
+            background-color: #fff7;
+            border-radius: 2px;
+            padding: 5px;
+            align-self: center;
+        }
+        .s-text-4{
+            color: $gris-claro;
+            font-size: 16px;
+            background-color: #3339;
+            border-radius: 3px;
+            padding: 0 5px;
+            text-align: center;
+            max-width: fit-content;
+            justify-self: center;
+        }
+        .s-span{
+            color: #341515;
+        }
+        a{
+            align-self: center;
+        }
+        .s-btn-4{
+            color: $rojo-claro;
+            background-color: $negro-claro;
+            border-radius: 0.3rem;
+            position: relative;
+            padding: 0 10px;
+            text-align: center;
+            border: 1px solid $gris-claro;
+            transition: all 0.3s;
+        }
+        .s-btn-4:hover{
+            transform: scale(1.2);
+            color: $gris-claro;
+        }
+    }
+}
+// pagina teclados
+// banner teclados
+.banner-teclados{
+    background-image: url(../images/working/w6.jpg);
+    height: 70svh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    @media (max-width:800px){
+        padding-top: 1rem;
+    }
+    .titulo-banner{
+        background-color: #3337;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin: 0px 20px;
+        color: $gris-claro;
+    }
+    .subtitulo-banner{
+        color: $fondo;
+        background-color: #6667;
+        max-width: fit-content;
+        border-radius: 5px;
+        margin: 30px 20px;
+        padding: 10px 20px;
+    }
+}
+// Galeria teclados
+
+.child-page-listing{
+    margin-bottom: 1rem;
+}
+
+.teclados-title{
+    text-align: center;
+    background-color: $rojo-oscuro;
+    padding: 0.5rem;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  padding: 0 1em;
+  /* hover styles */
+  .location-listing {
+    position: relative;
+    .location-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: rgba(90,0,10,0.4);
+        color: white;
+        
+        /* posicionar el texto en t' medio*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .location-image {
+      line-height: 0;
+      overflow: hidden;
+      border-radius: 5px 5px 0 0;
+      img {
+        width: 300px;
+        height: 169px;
+        width: 100%; /*necesidad de sobrescribir las dimensiones en línea */
+        inline-size: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        filter: blur(0px);
+        transition: filter 0.3s ease-in;
+        transform: scale(1.1);
+        transform: scaleY(center);
+      }
+    }
+    .nobre-precio{
+        display: flex;
+        justify-content: space-between;
+        background-color: $negro-claro;
+        color: $gris-claro;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        .nombre-teclado{
+            margin-left: 10px;
+        }
+        .precio-teclado{
+            margin-right: 10px;
+        }
+    }
+  }
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+/*para dispositivos táctiles*/
+@media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }
+
+// Pagina Mouse pad
+// Banner Mouse Pad
+.banner-mousepad{
+    background-image: url(../images/pad/superlight.jpg);
+    height: 70svh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    @media (max-width:800px){
+        padding-top: 1rem;
+    }
+    .titulo-banner{
+        background-color: #3337;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin: 0px 20px;
+        color: $rojo-oscuro;
+    }
+    .subtitulo-banner{
+        color: $gris-333;
+        background-color: #6667;
+        max-width: fit-content;
+        border-radius: 5px;
+        margin: 30px 20px;
+        padding: 10px 20px;
+    }
+}
+
+// Galeria Mouse pad
+.nombre-pad{
+    margin-left: 10px;
+}
+.precio-pad{
+    margin-right: 10px;
+}
+
+
+// Pagina Switches
+// Banner Switches
+.banner-switches{
+    background-image: url(../images/working/w21.jpg);
+    height: 70svh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 6rem;
+    @media (max-width:800px){
+        padding-top: 1rem;
+    }
+    .titulo-banner{
+        background-color: #3337;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin: 0px 20px;
+        color: $rojo-oscuro;
+    }
+    .subtitulo-banner{
+        color: $gris-claro;
+        background-color: #6667;
+        width: 45%;
+        max-width: fit-content;
+        border-radius: 5px;
+        margin: 30px 20px;
+        padding: 10px 20px;
+        @media (max-width:700px){
+            width: fit-content;
+        }
+    }
+}
+
+
+// Galeria Switches
+.nombre-switch{
+    margin-left: 10px;
+}
+.precio-switch{
+    margin-right: 10px;
+}
+
+
+// barra lateral
+body::-webkit-scrollbar {
+    width: 1em;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: $gris-oscuro;        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: $rojo-claro;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
+  }
+
+// barra horizontal
+.nuevos-productos::-webkit-scrollbar {
+    width: 1em;               /* width of the entire scrollbar */
+  }
+  
+.nuevos-productos::-webkit-scrollbar-track {
+    background: $gris-oscuro;        /* color of the tracking area */
+  }
+  
+.nuevos-productos::-webkit-scrollbar-thumb {
+    background-color: #3355dd;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
+  }
