@@ -398,7 +398,7 @@ footer {
   padding: 1.5em;
 }
 
-ul {
+.sin-estilo{
   list-style: none;
   padding: 0;
 }
@@ -521,40 +521,4 @@ ul {
 }
 }
 
-/* GUÍA */
-
-.text-body{
-  padding-top: 3rem;
-}
-
-.guia-title{
-  padding-bottom: 10px;
-  color: #9B3F3F;
-  text-align: center;
-}
-
-.g-videos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem 0;
-  padding-top: 2rem;
-}
-  
-.g-h5{
-  color: #9B3F3F;
-}
-
-
-
-.g-footer{
-  margin-top: 2rem;
-}
-
-.v-descripcion{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 

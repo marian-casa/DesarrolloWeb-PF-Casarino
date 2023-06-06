@@ -368,16 +368,16 @@ $fondo: #f1f1f1;
         padding-top: 1rem;
     }
     .titulo-banner{
-        background-color: #3337;
+        background-color: #ddd8;
         width: fit-content;
         padding: 5px 15px;
         border-radius: 2px;
         margin: 0px 20px;
-        color: $gris-claro;
+        color: $rojo-oscuro;
     }
     .subtitulo-banner{
-        color: $fondo;
-        background-color: #6667;
+        color: $gris-claro;
+        background-color: #3337;
         max-width: fit-content;
         border-radius: 5px;
         margin: 30px 20px;
@@ -493,7 +493,7 @@ $fondo: #f1f1f1;
         padding-top: 1rem;
     }
     .titulo-banner{
-        background-color: #3337;
+        background-color: #ddd8;
         width: fit-content;
         padding: 5px 15px;
         border-radius: 2px;
@@ -501,8 +501,8 @@ $fondo: #f1f1f1;
         color: $rojo-oscuro;
     }
     .subtitulo-banner{
-        color: $gris-333;
-        background-color: #6667;
+        color: $gris-claro;
+        background-color: #3338;
         max-width: fit-content;
         border-radius: 5px;
         margin: 30px 20px;
@@ -532,7 +532,7 @@ $fondo: #f1f1f1;
         padding-top: 1rem;
     }
     .titulo-banner{
-        background-color: #3337;
+        background-color: #ddd8;
         width: fit-content;
         padding: 5px 15px;
         border-radius: 2px;
@@ -541,7 +541,7 @@ $fondo: #f1f1f1;
     }
     .subtitulo-banner{
         color: $gris-claro;
-        background-color: #6667;
+        background-color: #3338;
         width: 45%;
         max-width: fit-content;
         border-radius: 5px;
@@ -724,3 +724,372 @@ body::-webkit-scrollbar-thumb {
   
 
   
+/* GUÍA */
+
+.contenido-guia{
+    .bienvenido{
+        background-image: url(../images/working/w23.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90svh;
+        padding: 2em;
+        justify-content: center;
+        .titulo-a{
+            color: $fondo;
+            background-color: #2228;
+            width: fit-content;
+            margin: 2rem auto;
+            padding: 1rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+    }
+    .guia-mensaje{
+        background-color: $gris-azulado;
+        color: $gris-claro;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 2rem;
+        h3{
+            text-align: center;
+            margin: auto;
+            font-size: 2rem;
+            padding: 1rem;
+            color: $rojo-claro;
+            margin-bottom: 1rem;
+            @media (max-width:450px){
+                font-size: 1.2rem;
+            }
+        }
+        p{
+            font-size: 1.1rem;
+            @media (max-width:450px){
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+.guia-teclado{
+    .contenedor-titulo{
+        background-image: url(../images/working/w35.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40svh;
+        padding: 2rem;
+        .btn-teclados{
+            background-color: #fff9;
+            color: $rojo-oscuro;
+            width: fit-content;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            border: none;
+            transition: all 0.2s;
+            @media (max-width:600px){
+                margin: auto;
+                text-align: center;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }            
+        }
+        .btn-teclados:hover{
+            transform: scale(1.1);
+            color: #3355dd;
+        }
+    }
+    .contenido-oculto{
+        min-width: 200px;
+        margin: 0 1rem;
+        background-color: $negro-claro;
+        color: $fondo;
+        padding: 3rem;
+        border-radius: 0 0 10px 10px;
+        .descripcion-teclados{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #341515;
+            background-color: $fondo;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        h5{
+            color: $rojo-oscuro;
+            background-color: $fondo;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        h3{
+            background-color: $gris-azulado;
+            padding: 1rem;
+            border-radius: 2rem;
+            width: fit-content;
+        }
+        p{
+            margin-left: 1rem;
+        }
+    }
+    .videos-teclado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: $fondo;
+        background-color: $gris-azulado;
+        border-radius: 0 0 1rem 1rem;
+        width: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+        }
+        h5{
+            padding: 1rem;
+            color: $rojo-claro;
+            background-color: $gris-claro;
+            width: fit-content;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+        }
+        iframe{
+            border-radius: 1rem;
+            width: auto;
+            height: auto;
+            margin: 1rem;
+            
+        }
+        .iframes-container{
+            display: flex;
+            align-items: center;
+            align-self: center;
+            justify-items: center;
+            @media (max-width:670px){
+                flex-direction: column;
+            }
+        }
+    }
+}
+  
+
+.guia-switch{
+    margin: 1rem 0;
+    .contenedor-titulo{
+        background-image: url(../images/switch/All\ Kailh\ switch.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40svh;
+        padding: 2rem;
+        .btn-switches{
+            background-color: #fff9;
+            color: $rojo-oscuro;
+            width: fit-content;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            border: none;
+            transition: all 0.2s;
+            @media (max-width:600px){
+                margin: auto;
+                text-align: center;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }            
+        }
+        .btn-switches:hover{
+            transform: scale(1.1);
+            color: #3355dd;
+        }
+    }
+    .contenido-oculto{
+        min-width: 200px;
+        margin: 0 1rem;
+        background-color: $negro-claro;
+        color: $fondo;
+        padding: 3rem;
+        border-radius: 0 0 10px 10px;
+        .descripcion-switches{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #341515;
+            background-color: $fondo;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        h5{
+            color: $rojo-oscuro;
+            background-color: $fondo;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        h3{
+            background-color: $gris-azulado;
+            padding: 1rem;
+            border-radius: 2rem;
+            width: fit-content;
+        }
+        p{
+            margin-left: 1rem;
+        }
+    }
+    .videos-switch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: $fondo;
+        background-color: $gris-azulado;
+        border-radius: 0 0 1rem 1rem;
+        width: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+        }
+        h5{
+            padding: 1rem;
+            color: $rojo-claro;
+            background-color: $gris-claro;
+            width: fit-content;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+        }
+        iframe{
+            border-radius: 1rem;
+            width: auto;
+            height: auto;
+            margin: 1rem;
+            
+        }
+        .iframes-container{
+            display: flex;
+            align-items: center;
+            align-self: center;
+            justify-items: center;
+            @media (max-width:670px){
+                flex-direction: column;
+            }
+        }
+    }
+}
+  
+.guia-mousepad{
+    .contenedor-titulo{
+        background-image: url(../images/pad/Black\ and\ Red\ Gaming\ Mousepad\ xl.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 40svh;
+        padding: 2rem;
+
+        .btn-mousepads{
+            background-color: #fff9;
+            color: $rojo-oscuro;
+            width: fit-content;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            border: none;
+            transition: all 0.2s;
+            @media (max-width:600px){
+                margin: auto;
+                text-align: center;
+                display: flex;
+                align-self: center;
+                justify-content: center;
+            }            
+        }
+        .btn-mousepads:hover{
+            transform: scale(1.1);
+            color: #3355dd;
+        }
+    }
+    .contenido-oculto{
+        min-width: 200px;
+        margin: 0 1rem;
+        background-color: $negro-claro;
+        color: $fondo;
+        padding: 3rem;
+        border-radius: 0 0 10px 10px;
+        .descripcion-mousepads{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+            color: #341515;
+            background-color: $fondo;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        h5{
+            color: $rojo-oscuro;
+            background-color: $fondo;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+        }
+        h3{
+            background-color: $gris-azulado;
+            padding: 1rem;
+            border-radius: 2rem;
+            width: fit-content;
+        }
+        p{
+            margin-left: 1rem;
+        }
+    }
+    .videos-mousepad{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: $fondo;
+        background-color: $gris-azulado;
+        border-radius: 0 0 1rem 1rem;
+        width: auto;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+        }
+        h5{
+            padding: 1rem;
+            color: $rojo-claro;
+            background-color: $gris-claro;
+            width: fit-content;
+            text-align: center;
+            border-radius: 0.5rem;
+            font-size: 1.4rem;
+        }
+        iframe{
+            border-radius: 1rem;
+            width: auto;
+            height: auto;
+            margin: 1rem;
+            
+        }
+        .iframes-container{
+            display: flex;
+            align-items: center;
+            align-self: center;
+            justify-items: center;
+            @media (max-width:670px){
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
