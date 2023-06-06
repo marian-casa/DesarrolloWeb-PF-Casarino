@@ -592,3 +592,135 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
   }
+
+  /* SOBRE NOSOTROS */
+
+.primera-seccion-sn{
+    justify-content: justify;
+    .cabecera{
+        background-image: url(../images/working/w1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #3337;
+        height: 50vh;
+        padding: 2em;
+        @media (max-width:600px){
+            padding: 0.5em;
+        }
+        .sn-h2{
+            font-size: 1.8rem;
+            color: $fondo;
+            background-color: #6669;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 0 5rem;
+            padding: 20px;
+            @media (max-width:600px){
+                margin: 0 10px;
+                font-size: 1.5rem;
+            }
+        }
+    }   
+    .contenido{
+        background-color: $gris-azulado;
+        margin: 1rem 3rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        font-size: 1.1rem;
+        color: $gris-claro;
+        @media (max-width: 400px){
+            font-size: 0.8rem;
+        }
+        @media (max-width:550px){
+            margin: 1rem 1rem;
+            font-size: 0.9rem;
+            .sn-logo{
+                align-self: center;
+                height: 40svw;
+                width: fit-content;
+            }
+        }
+    } 
+    .logo-descripcion{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 100px;
+        background-color: $gris-azulado;
+        color: $gris-claro;
+        border-radius: 20px;
+        font-size: 20px;
+        margin: 1rem;
+        @media (max-width: 400px){
+            font-size: 14px;
+        }
+        @media (max-width: 1024px){
+            flex-direction: column;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .sn-logo{
+            height: auto;
+            width: 300px;
+            align-self: center;
+            border-radius: 200px;
+            transition: all 0.3s;
+            @media (max-width: 400px){
+                width: 200px;
+            }
+        }
+        .sn-logo:hover{
+            transform: scale(1.1);
+            margin-right: 10px;
+        }
+        .texto-logo{
+            align-self: center;
+            margin: 10px;
+        }
+        h3{
+            text-align: center;
+            color: $rojo-claro;
+        }
+        
+    }
+
+    .area-de-trabajo{
+        background-image: url(../images/working/w5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90svh;
+        padding: 2rem;
+        border-radius: 1em;
+        .titulo-oficinas{
+            color: $fondo;
+            background-color: #3339;
+            width: fit-content;
+            margin: 2rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            @media (max-width:480px){
+                margin: 2rem 0;
+            }
+        }
+        .subtitulo-oficinas{
+            background-color: #2229;
+            width: fit-content;
+            color: $gris-claro;
+            margin: 0 2.1rem;
+            border-radius: 1.2rem;
+            padding: 1rem;
+            @media (max-width:480px){
+                margin: 0 1.1rem;
+            }
+        }
+    }
+}
+
+    
+
+
+  
+
+  
