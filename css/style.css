@@ -9,7 +9,8 @@ html{
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #f1f1f1;
+    /* background-color: #F1E3E4 ; */
+    background-color: #212529;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -76,23 +77,25 @@ body {
 
 .nuevos{
   padding: 0px;
+  margin: 10rem auto;
+  max-width: 1300px;
+  
 }
 
 .nuevos-productos{
   --_spacer: var(--size-3);
   display: grid;
-  gap: 0.5rem;
   grid-auto-flow: column;
   grid-auto-columns: 17.5%;
-  padding: 0 0.5rem 0.5rem;
   overflow-x: scroll;
   overscroll-behavior-inline: contain;
-  margin: 0 10px;
   background-color: #3f474f;
   border-radius: 5px;
+  gap: 1rem;
+  padding: 0 1rem;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1024px) {
   .card-text{
     display: none;
   }
@@ -128,7 +131,7 @@ body {
     margin-bottom: 10px;
   }
   .nuevos-productos{
-    grid-auto-columns: 23%;
+    grid-auto-columns: 22%;
   }
   .card-body a{
     min-width: 90px;
@@ -151,7 +154,7 @@ body {
   }
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:500px) {
   .card-text{
     display: none;
   }
@@ -168,7 +171,7 @@ body {
   }
 }
 
-@media screen and (max-width:330px) {
+@media screen and (max-width:380px) {
   .card-text{
     display: none;
   }
@@ -177,7 +180,7 @@ body {
     font-size: 15px;
   }
   .nuevos-productos{
-    grid-auto-columns: 42%;
+    grid-auto-columns: 45%;
   }
   .card-body a{
     font-size: 10px;
@@ -188,21 +191,20 @@ body {
   font-size: 14px;
   display: grid;
   grid-template-rows: min-content;
-  padding: 0.5rem;
   background: var(--surface-2);
   border-radius: 10px;
   box-shadow: var(--shadow-2);
-  width: 15vw;
-  margin: 10px 0;
+  margin: 1rem 0;
+  border: 2px solid #222222;
 }
 
 .np-article > img {
   inline-size: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  height: 15vh;
-  border: 1px solid #222222;
+  height: 20vh;
   border-radius: 5px 5px 0 0;
+  transform: scaleY(center);
 }
 
 .snaps-inline {
@@ -215,25 +217,44 @@ body {
 }
 
 .card-text{
-  height: 60%;
+  height: 47%;
 }
 
+
+.np-texto{
+  /* border-bottom: #626263 1px solid; */
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.np-btn{
+  border-radius: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.np-btn:hover{
+  color: #c7c8c9;
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
 
 .card-body{
   padding: 0 10px;
   border: #666 1px solid;
   border-radius: 0 0 10px 10px;
-  background-color: #c7c8c9;
+  background-color: #333;
   border: 1px solid #222222;
+  color: #c7c8c9 ;
 }
 
-.mv-card-body{
-  padding: 0 10px;
-  border: #666 1px solid;
-  border-radius: 0 0 10px 10px;
-  background-color: #c7c8c9;
-  border: 1px solid #181818;
+.t-inicio{
+  font-size: 2rem;
 }
+
+/* Mas Vendidos */
+
 
 
 .card-title{
@@ -250,32 +271,24 @@ body {
   padding: 10px 0;
 }
 
-
 .mv-img{
   object-fit: cover;
 }
 
-.np-texto{
-  max-width: 98%;
-  border-top: #626263 1px solid;
-  padding-top: 15px;
-  margin-left: 20px;
-}
-
-.np-btn{
-  border-radius: 20px;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-.np-btn:hover{
-  color: #c7c8c9;
-  transition: all 0.5s;
+.mv-text{
+  width: 100%;
+  text-align: center;
 }
 
 .mv-productos{
   width: 18rem;
   font-size: 1rem;
+  background-color: #181818;
+  border: 1px solid #c7c8c9;
+  border-radius: 1rem;
+  padding: 0;
+  color: #c0c0c0;
+  transition: all 0.3s;
 }
 
 .mv-img{
@@ -283,34 +296,41 @@ body {
   border: 1px solid #181818;
   height: 200px;
   object-fit: cover;
-  transition: all 0.3s;
 }
 
-.mv-img:hover {
-  transform: scale(1.1);
-  border-radius: 5%;
+.mv-productos:hover {
+  transform: scale(1.05);
 }
 
 .mv-padre{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 2rem;
   background-color: #3f474f;
   width: auto;
   border-radius: 5px;
-  padding: 10px 0;
+  padding: 1rem;
   margin: 1rem 0px;
 }
 
 .mv-texto{
   font-size: 1rem;
-  height: 85px;
+  height: 80px;
+  margin: 1rem;
 }
 
 .mv-title{
   font-size: 1.5rem;
   margin: 10px 0 0 0;
+}
+
+.mv-btn{
+  margin:  1rem;
+}
+
+.mas-vendidos{
+  margin: 11rem auto;
 }
 
 /* NABVAR */
@@ -387,15 +407,16 @@ footer {
   color: #fff;
   line-height: 1.6;
   padding: 0 1.5em;  
-  margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  max-width: 1300px;
 }
 
 .content {
   max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
+  margin: 0 auto;
+  padding: 8rem;
 }
 
 .sin-estilo{
@@ -406,7 +427,7 @@ footer {
 .logo {
   text-align: center;
   font-size: 3em;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .logo span {
@@ -422,9 +443,12 @@ footer {
   padding: 1em;
 }
 
+
+
 .contact-form {
   background: #222222;
-  border-radius: 2rem;
+  border-radius:2rem 2rem 0 0;
+  height: 680px;
 }
 
 .contact-form form {
@@ -462,20 +486,23 @@ footer {
   border: 0;
   text-transform: uppercase;
   padding: 1em;
+  border-radius: 1rem;
+  transition: all 0.5s;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
   background: #9B3F3F;
-  color: #fff;
-  transition: background-color 1s ease-out;
+  font-size: 1.3rem;
+  padding: 0.6rem;
   outline: 0;
+  transform: scale(1.03);
 }
 
 /* INFORMACIÓN DE CONTACTO */
 .contact-info {
   background: #000;
-  border-radius: 2rem;
+  border-radius: 0 0 2rem 2rem ;
 }
 
 .contact-info h4, .contact-info ul, .contact-info p {
@@ -485,9 +512,6 @@ footer {
 
 /* TAMAÑO GRANDE */
 @media(min-width: 939px) {
-  /* body {
-      padding: 0 4em;
-  } */
   .contact-wrapper {
       display: grid;
       grid-template-columns: 2fr 1fr;
@@ -500,13 +524,27 @@ footer {
   .contact-info p {
       text-align: left;
   }
+  
+  .contact-form {
+    background: #222222;
+    border-radius: 2rem 0 0 2rem;
+  }
+  .contact-info {
+    border-radius: 0 2rem  2rem 0;
+  }
 }
 
 @media screen and (max-width: 520px) {
 .content {
   padding: 0 0 24px 0;
 }
-
+.contact-form {
+  border-radius:2rem 2rem 0 0;
+  height: 850px;
+}
+.contact-info {
+  border-radius:  0 0 2rem  2rem;
+}
 .contact-form form {
   display: grid;
   grid-template-columns: 1fr;
@@ -519,6 +557,78 @@ footer {
   border-bottom: 1px solid #626263;
   margin-bottom: 20px;
 }
+.logo{
+  font-size: 2.5rem;
+  padding-top: 2rem;
+}
 }
 
+
+/* ¿Tienes dudas? */
+.accordion {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.accordion-item{
+  margin: 2px;
+}
+
+.accordion-button {
+  background-color: #3f474f;
+  color: #c0c0c0;
+  border: none;
+}
+
+.accordion-button:hover {
+  background-color: #212529;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #c0c0c0;
+}
+
+.accordion-body {
+  background-color: #f0f0f0;
+  color: #333333;
+  font-size: 14px;
+}
+
+.accordion-header {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+}
+
+.acordion-title{
+  text-align: center;
+  background-color: #9B3F3F;
+  color: #cccccc;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #c7c8c9;
+}
+
+/* ¿sigues con dudas? */
+
+.contact-h2{
+  margin: 0px;
+  color: #cccccc;
+}
+
+.contact-title{
+  text-align: center;
+  background-color: #9B3F3F;
+  border-radius:  10px 10px 0 0;
+  margin: 0 auto;
+  margin-top: 15rem;
+  max-width: 1300px;
+}
+
+.sn-h3{
+  text-align: center;
+  padding-bottom: 5rem;
+
+}
 

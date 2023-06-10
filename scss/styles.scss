@@ -23,7 +23,8 @@ $fondo: #f1f1f1;
 // seccion nuevos
 
 .grupo-de-productos{
-    padding: 0 5px;
+    max-width: 1400px;
+    margin: 5rem auto;
     .titulo-grupo{
         margin: 0;
     }
@@ -41,29 +42,26 @@ $fondo: #f1f1f1;
     }
     .base-seccion{
         display: grid;
-        row-gap: 2rem;
         padding: 0;
         grid-template-columns: repeat(3, minmax(auto, 1fr));
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
         padding: 0;
         text-align: center;
         list-style-type: none;
         outline: none;
-        margin-top: 1rem;
-        gap: 0.5rem;
-
-
+        margin-bottom: 0;
+        height: 12rem;
         li a figure img{
             border-radius: 5px;
             border: 1px solid #333;
             display: block;
             width: 100%;
             height: 100%;
-            margin: auto 0;
+            margin: 0 auto;
             transition: 0.5s;
             object-fit: cover;
         }
@@ -72,9 +70,18 @@ $fondo: #f1f1f1;
         }
         li a{
             text-decoration: none;
-            color: #b34949;
+            color: #F15152;
+            font-size: 1.1rem;
+            transition: all 0.3s;
         }
-        
+        li a:hover{
+            color: $gris-claro;
+            transform: scale(1.3);
+            font-size: 1.3rem;
+        }
+        .item-de-coleccion{
+            margin-bottom: 1rem;
+        }
     }
     
 
@@ -95,7 +102,6 @@ $fondo: #f1f1f1;
         color: #dedede;
         padding: 0px 0;
         border-radius: 10px;
-        width: 90vw;
         margin: 10px auto;
     }
     .titulo-grupo{
@@ -104,8 +110,19 @@ $fondo: #f1f1f1;
 }
 // seccion sugerencias
 .sugerencias{
-    margin: 10px 0;
     width: 100%;
+    max-width: 1300px;
+    margin: 14rem auto;
+    .mensaje-ayuda{
+        color: $gris-claro;
+        text-align: center;
+        margin: 3rem;
+        
+        .title-ayuda{
+            color: $fondo;
+            font-size: 2rem;
+        }
+    }
     .seccion-1{
         @media (min-width: 868px){
         display: grid;
@@ -132,8 +149,11 @@ $fondo: #f1f1f1;
         white-space: normal;
         overflow: visible;
         margin: 1px;
+        border-radius: .5rem .5rem 0 0;
         @media (min-width: 868px){
             height: 44.8svh;
+            border-radius: .5rem 0 0 0;
+            padding: 3rem 0;
         }
         .s-h5{
             color: $negro-claro;
@@ -142,6 +162,9 @@ $fondo: #f1f1f1;
             background-color: #fff7;
             border-radius: 2px;
             padding-left:  5px;
+            @media (min-width: 868px){
+                font-size: 1.8rem;
+            }
         }
         .s-text{
             color: $gris-claro;
@@ -152,10 +175,16 @@ $fondo: #f1f1f1;
             padding: 0 5px;
             max-width: fit-content;
             text-align: center;
-
+            @media (min-width: 868px){
+                font-size: 1.1rem;
+                margin: 2rem 5vw ;
+            }
+            @media (min-width: 868px){
+                margin: 4rem 5vw;
+            }
         }
         .s-span{
-            color: #341515;
+            color: #f1f1f1;
         }
         .s-btn{
             color: $rojo-claro;
@@ -165,8 +194,11 @@ $fondo: #f1f1f1;
             margin: 20px 8vw;
             padding: 0 10px;
             text-align: center;
-            border: 1px solid $gris-claro;
+            border: 1px solid $gris-oscuro;
             transition: all 0.3s;
+            @media (min-width: 868px){
+                font-size: 1.3rem;
+            }
         }
         .s-btn:hover{
             transform: scale(1.2);
@@ -176,7 +208,6 @@ $fondo: #f1f1f1;
     .caja-responsive-2{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         background-image: url('../images/teclados/s2.jpg');
@@ -191,6 +222,11 @@ $fondo: #f1f1f1;
         margin: 1px;
         @media (min-width: 868px){
             height: 44.8svh;
+            border-radius: 0 .5rem 0 0;
+            
+        }
+        @media (min-width: 1024px){
+            padding: 3rem 0;
         }
         .s-h5-2{
             color: $negro-claro;
@@ -200,6 +236,9 @@ $fondo: #f1f1f1;
             border-radius: 2px;
             padding:  5px;
             text-align: center;
+            @media (min-width: 868px){
+                font-size: 1.8rem;
+            }
         }
         .s-text-2{
             color: $gris-claro;
@@ -208,25 +247,29 @@ $fondo: #f1f1f1;
             background-color: #3337;
             max-width: fit-content;
             border-radius: 3px;
-            
+            @media (min-width: 868px){
+                font-size: 1.1rem;
+            }
+            @media (min-width: 1024px){
+                margin-bottom: 95px;
+            }
         }
         
         .s-span{
-            color: #341515;
+            color: #f1f1f1;
         }
         
         .s-btn-2{
             color: $rojo-claro;
             background-color: $negro-claro;
             border-radius: 0.3rem;
-            position: relative;
-            // margin: 10vh 35vw;
             padding: 0 10px;
             text-align: center;
-            border: 1px solid $gris-claro;
-            align-self: flex-end;
-            align-items: flex-end;
+            border: 1px solid $gris-oscuro;
             transition: all 0.3s;
+            @media (min-width: 868px){
+                font-size: 1.3rem;
+            }
         }
         .s-btn-2:hover{
             transform: scale(1.2);
@@ -236,6 +279,7 @@ $fondo: #f1f1f1;
     .caja-responsive-3{
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         justify-content: space-between;
         background-image: url('../images/working/w24.jpg');
         background-size: cover;
@@ -243,12 +287,15 @@ $fondo: #f1f1f1;
         background-repeat: no-repeat;
         height: 200px;
         border: #212529 1px solid;
-        padding: 10px;
+        padding: 1rem;
         white-space: normal;
         overflow: visible;
         margin: 1px;
         @media (min-width: 868px){
             height: 44.8svh;
+            border-radius: 0 0 0 .5rem;
+            padding: 3rem 0;
+            align-items: center;
         }
         .s-h5-3{
             color: $negro-claro;
@@ -257,6 +304,9 @@ $fondo: #f1f1f1;
             background-color: #fff7;
             border-radius: 2px;
             padding:  5px;
+            @media (min-width: 868px){
+                font-size: 1.8rem;
+            }
         }
         .s-text-3{
             color: $gris-claro;
@@ -266,9 +316,12 @@ $fondo: #f1f1f1;
             border-radius: 3px;
             padding: 0 5px;
             max-width: fit-content;
+            @media (min-width: 868px){
+                font-size: 1.1rem;
+            }
         }
         .s-span{
-            color: #341515;
+            color: #f1f1f1;
         }
         a{
             display: flex;
@@ -282,11 +335,15 @@ $fondo: #f1f1f1;
             background-color: $negro-claro;
             border-radius: 0.3rem;
             position: relative;
-            margin-top: 50px;
+            margin: 0 0 1rem 6vw;
             padding: 2px 10px;
             text-align: center;
-            border: 1px solid $gris-claro;
+            border: 1px solid $gris-oscuro;
             transition: all 0.3s;
+            @media (min-width: 868px){
+                margin: 0;
+                font-size: 1.3rem;
+            }
         }
         .s-btn-3:hover{
             transform: scale(1.2);
@@ -309,8 +366,11 @@ $fondo: #f1f1f1;
         white-space: normal;
         overflow: visible;
         margin: 1px;
+        border-radius: 0 0 .5rem .5rem;
         @media (min-width: 868px){
             height: 44.8svh;
+            border-radius: 0 0 .5rem 0;
+            padding: 3rem 0;
             .s-text-4{
                 margin-bottom: 70px;
             }
@@ -322,6 +382,9 @@ $fondo: #f1f1f1;
             border-radius: 2px;
             padding: 5px;
             align-self: center;
+            @media (min-width: 868px){
+                font-size: 1.8rem;
+            }
         }
         .s-text-4{
             color: $gris-claro;
@@ -332,9 +395,12 @@ $fondo: #f1f1f1;
             text-align: center;
             max-width: fit-content;
             justify-self: center;
+            @media (min-width: 868px){
+                font-size: 1.1rem;
+            }
         }
         .s-span{
-            color: #341515;
+            color: #f1f1f1;
         }
         a{
             align-self: center;
@@ -346,8 +412,11 @@ $fondo: #f1f1f1;
             position: relative;
             padding: 0 10px;
             text-align: center;
-            border: 1px solid $gris-claro;
+            border: 1px solid $gris-oscuro;
             transition: all 0.3s;
+            @media (min-width: 868px){
+                font-size: 1.3rem;
+            }
         }
         .s-btn-4:hover{
             transform: scale(1.2);
@@ -355,7 +424,9 @@ $fondo: #f1f1f1;
         }
     }
 }
+
 // pagina teclados
+
 // banner teclados
 .banner-teclados{
     background-image: url(../images/working/w6.jpg);
@@ -384,10 +455,12 @@ $fondo: #f1f1f1;
         padding: 10px 20px;
     }
 }
+
 // Galeria teclados
 
 .child-page-listing{
-    margin-bottom: 1rem;
+    margin: 8rem auto;
+    max-width: 1500px;
 }
 
 .teclados-title{
@@ -447,15 +520,15 @@ $fondo: #f1f1f1;
     .nobre-precio{
         display: flex;
         justify-content: space-between;
-        background-color: $negro-claro;
+        background-color: $gris-oscuro;
         color: $gris-claro;
         padding: 20px;
         border-radius: 0 0 5px 5px;
         .nombre-teclado{
-            margin-left: 10px;
+            margin-left: 1rem;
         }
         .precio-teclado{
-            margin-right: 10px;
+            margin-right: 1rem;
         }
     }
   }
@@ -512,10 +585,10 @@ $fondo: #f1f1f1;
 
 // Galeria Mouse pad
 .nombre-pad{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .precio-pad{
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 
@@ -556,10 +629,10 @@ $fondo: #f1f1f1;
 
 // Galeria Switches
 .nombre-switch{
-    margin-left: 10px;
+    margin-left: 1rem;
 }
 .precio-switch{
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
 
@@ -573,7 +646,7 @@ body::-webkit-scrollbar-track {
   }
   
 body::-webkit-scrollbar-thumb {
-    background-color: $rojo-claro;    /* color of the scroll thumb */
+    background-color: #c7c8c9;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
   }
@@ -588,7 +661,7 @@ body::-webkit-scrollbar-thumb {
   }
   
 .nuevos-productos::-webkit-scrollbar-thumb {
-    background-color: #3355dd;    /* color of the scroll thumb */
+    background-color: #c7c8c9;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
   }
@@ -605,6 +678,7 @@ body::-webkit-scrollbar-thumb {
         background-color: #3337;
         height: 50vh;
         padding: 2em;
+        border-radius: 1rem;
         @media (max-width:600px){
             padding: 0.5em;
         }
@@ -623,17 +697,17 @@ body::-webkit-scrollbar-thumb {
         }
     }   
     .contenido{
-        background-color: $gris-azulado;
-        margin: 1rem 3rem;
+        margin: 8rem auto;
+        max-width: 1200px;
         padding: 2rem;
         border-radius: 1rem;
         font-size: 1.1rem;
-        color: $gris-claro;
+        color: $fondo;
         @media (max-width: 400px){
             font-size: 0.8rem;
         }
         @media (max-width:550px){
-            margin: 1rem 1rem;
+            margin: 1rem 0.5rem;
             font-size: 0.9rem;
             .sn-logo{
                 align-self: center;
@@ -647,13 +721,15 @@ body::-webkit-scrollbar-thumb {
         align-content: center;
         justify-content: center;
         padding: 30px 100px;
-        background-color: $gris-azulado;
+        background-color: $negro-claro;
         color: $gris-claro;
         border-radius: 20px;
         font-size: 20px;
-        margin: 1rem;
+        margin: 10rem auto;
+        max-width: 1300px;
         @media (max-width: 400px){
             font-size: 14px;
+            margin: .5rem;
         }
         @media (max-width: 1024px){
             flex-direction: column;
@@ -666,6 +742,7 @@ body::-webkit-scrollbar-thumb {
             align-self: center;
             border-radius: 200px;
             transition: all 0.3s;
+            margin: 2rem;
             @media (max-width: 400px){
                 width: 200px;
             }
@@ -680,7 +757,7 @@ body::-webkit-scrollbar-thumb {
         }
         h3{
             text-align: center;
-            color: $rojo-claro;
+            color: #e75e5e;
         }
         
     }
@@ -693,6 +770,8 @@ body::-webkit-scrollbar-thumb {
         height: 90svh;
         padding: 2rem;
         border-radius: 1em;
+        margin: 0 auto;
+        max-width: 1400px;
         .titulo-oficinas{
             color: $fondo;
             background-color: #3339;
@@ -739,27 +818,37 @@ body::-webkit-scrollbar-thumb {
             color: $fondo;
             background-color: #2228;
             width: fit-content;
-            margin: 2rem auto;
+            margin: 0 auto;
             padding: 1rem;
             border-radius: 1rem;
             text-align: center;
+            @media (max-width:400px){
+                margin: auto;
+                padding: 1rem 0.5rem;
+            }
         }
     }
     .guia-mensaje{
-        background-color: $gris-azulado;
+        background-color: #212529;
         color: $gris-claro;
         padding: 1rem;
         margin: 1rem;
         border-radius: 2rem;
+        margin: 10rem auto;
+        max-width: 1300px;
+        @media(max-width:450px){
+            margin: 1rem 0;
+        }
         h3{
             text-align: center;
-            margin: auto;
             font-size: 2rem;
             padding: 1rem;
             color: $rojo-claro;
             margin-bottom: 1rem;
             @media (max-width:450px){
                 font-size: 1.2rem;
+                text-align: left;
+                padding: 1rem 0;
             }
         }
         p{
@@ -772,18 +861,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 .guia-teclado{
+    border: 2px solid $gris-azulado;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    border-radius: .5rem .5rem 1rem 1rem;
+    max-width: 1400px;
     .contenedor-titulo{
         background-image: url(../images/working/w35.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 40svh;
-        padding: 2rem;
+        height: 50svh;
+        padding: 5rem;
+        border-radius: .5rem .5rem 0 0;
+        @media(max-width:600px){
+            padding: 5rem 0;
+        }
         .btn-teclados{
             background-color: #fff9;
-            color: $rojo-oscuro;
+            color: #cb0000;
             width: fit-content;
-            margin: 1rem;
+            margin: 4.5rem;
             padding: 1rem;
             border-radius: 3rem;
             font-size: 1.5rem;
@@ -791,6 +889,7 @@ body::-webkit-scrollbar-thumb {
             transition: all 0.2s;
             @media (max-width:600px){
                 margin: auto;
+                padding: 1rem;
                 text-align: center;
                 display: flex;
                 align-self: center;
@@ -809,6 +908,10 @@ body::-webkit-scrollbar-thumb {
         color: $fondo;
         padding: 3rem;
         border-radius: 0 0 10px 10px;
+        @media (max-width:450px){
+            padding: .5rem;
+            margin: 0;
+        }
         .descripcion-teclados{
             font-size: 1.5rem;
             margin: 1rem 0;
@@ -816,9 +919,12 @@ body::-webkit-scrollbar-thumb {
             background-color: $fondo;
             padding: 1rem;
             border-radius: 1rem;
+            @media (max-width:450px){
+                font-size: 1rem;
+            }
         }
         h5{
-            color: $rojo-oscuro;
+            color: #970000;
             background-color: $fondo;
             width: fit-content;
             padding: 0.5rem 1rem;
@@ -832,6 +938,29 @@ body::-webkit-scrollbar-thumb {
         }
         p{
             margin-left: 1rem;
+            @media (max-width:450px){
+                font-size: 0.9rem;
+            }
+        }
+        div ul li{
+            margin: 10px;
+            @media (max-width:450px){
+                font-size: 0.9rem;
+            }
+        }
+        div ol li{
+            margin: 10px;
+            @media (max-width:450px){
+                font-size: 1rem;
+            }
+        }
+        .recomendaciones{
+            margin: 0 auto;
+            margin-top: 2rem;
+            text-align: center;
+            @media (max-width:450px){
+                font-size: 1.3rem;
+            }
         }
     }
     .videos-teclado{
@@ -841,11 +970,11 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         gap: 1rem;
         color: $fondo;
-        background-color: $gris-azulado;
+        background-color: #979797;
         border-radius: 0 0 1rem 1rem;
         width: auto;
         padding: 1rem;
-        margin-bottom: 1rem;
+        
         a{
             text-decoration: none;
         }
@@ -879,24 +1008,33 @@ body::-webkit-scrollbar-thumb {
   
 
 .guia-switch{
-    margin: 1rem 0;
+    border: 2px solid $gris-azulado;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    border-radius: .5rem .5rem 1rem 1rem;
+    max-width: 1400px;
     .contenedor-titulo{
         background-image: url(../images/switch/All\ Kailh\ switch.jfif);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        height: 40svh;
+        height: 50svh;
         padding: 2rem;
+        border-radius: .5rem .5rem 0 0;
+        @media(max-width:600px){
+            padding: 5rem 0;
+        }
         .btn-switches{
             background-color: #fff9;
-            color: $rojo-oscuro;
+            color: #cb0000;
             width: fit-content;
-            margin: 1rem;
+            margin: 4.5rem;
             padding: 1rem;
             border-radius: 3rem;
             font-size: 1.5rem;
             border: none;
             transition: all 0.2s;
+            
             @media (max-width:600px){
                 margin: auto;
                 text-align: center;
@@ -917,6 +1055,10 @@ body::-webkit-scrollbar-thumb {
         color: $fondo;
         padding: 3rem;
         border-radius: 0 0 10px 10px;
+        @media (max-width:450px){
+            padding: .5rem;
+            margin: 0;
+        }
         .descripcion-switches{
             font-size: 1.5rem;
             margin: 1rem 0;
@@ -949,11 +1091,10 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         gap: 1rem;
         color: $fondo;
-        background-color: $gris-azulado;
+        background-color: #979797;
         border-radius: 0 0 1rem 1rem;
         width: auto;
         padding: 1rem;
-        margin-bottom: 1rem;
         a{
             text-decoration: none;
         }
@@ -986,6 +1127,11 @@ body::-webkit-scrollbar-thumb {
 }
   
 .guia-mousepad{
+    border: 2px solid $gris-azulado;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    border-radius: .5rem .5rem 1rem 1rem;
+    max-width: 1400px;
     .contenedor-titulo{
         background-image: url(../images/pad/Black\ and\ Red\ Gaming\ Mousepad\ xl.jfif);
         background-size: cover;
@@ -993,12 +1139,15 @@ body::-webkit-scrollbar-thumb {
         background-repeat: no-repeat;
         height: 40svh;
         padding: 2rem;
-
+        border-radius: .5rem .5rem 0 0;
+        @media(max-width:600px){
+            padding: 5rem 0;
+        }
         .btn-mousepads{
             background-color: #fff9;
-            color: $rojo-oscuro;
+            color: #cb0000;
             width: fit-content;
-            margin: 1rem;
+            margin: 4.5rem;
             padding: 1rem;
             border-radius: 3rem;
             font-size: 1.5rem;
@@ -1024,6 +1173,10 @@ body::-webkit-scrollbar-thumb {
         color: $fondo;
         padding: 3rem;
         border-radius: 0 0 10px 10px;
+        @media (max-width:450px){
+            padding: .5rem;
+            margin: 0;
+        }
         .descripcion-mousepads{
             font-size: 1.5rem;
             margin: 1rem 0;
@@ -1056,11 +1209,11 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         gap: 1rem;
         color: $fondo;
-        background-color: $gris-azulado;
+        background-color: #979797;
         border-radius: 0 0 1rem 1rem;
         width: auto;
         padding: 1rem;
-        margin-bottom: 1rem;
+
         a{
             text-decoration: none;
         }
