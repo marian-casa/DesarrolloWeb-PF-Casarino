@@ -1,0 +1,10 @@
+// mixins
+@mixin centrar-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin centrar-texto{
+    text-align: center;
+}

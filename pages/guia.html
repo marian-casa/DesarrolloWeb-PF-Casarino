@@ -8,12 +8,14 @@
     <meta name="description" content="Encuentra en nuestra tienda una amplia selección de teclados, switches y mousepads de alta calidad. Mejora tu experiencia de juego o trabajo con nuestros productos ergonómicos y diseñados para brindar un rendimiento excepcional. Explora nuestra colección y elige el teclado o mousepad perfecto para ti.">
     <meta name="keywords" content="teclados, switches, mousepads, gaming, trabajo, ergonómicos, mecánicos, retroiluminación, personalización, sensibilidad, comodidad">
     <title>Guía</title>
+    <link class="shortcut-icon" rel="shortcut icon" href="../images/logo/logo-color.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...tu-codigo-de-integridad-aqui..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="../index.js"></script>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -56,31 +58,39 @@
     <section class="container-fluid contenido-guia">
 
         <article class="bienvenido text-body">
-            <h2 class="titulo-a">Tu Guía Definitiva para Elegir el Teclado, Switch y Mouse Pad Perfectos</h2>
+            <h2 class="titulo-a animate__animated animate__backInLeft">Tu Guía definitiva para elegir el Teclado, Switch y Mouse Pad perfectos</h2>
           </article>
 
         <article class="guia-mensaje">
-          <h3>Encuentra la combinación ideal para maximizar tu rendimiento y comodidad.</h3>
-          <p>Bienvenido a nuestra completa guía de compra, diseñada para ayudarte a tomar decisiones informadas al adquirir tu teclado, switch y mouse pad. Aquí encontrarás consejos expertos, recomendaciones y detalles clave que te guiarán hacia la elección perfecta. Ya sea que busques mejorar tu experiencia de gaming o aumentar tu productividad en el trabajo, estamos aquí para brindarte la información necesaria. Prepárate para descubrir una nueva dimensión de rendimiento y comodidad. ¡Comencemos!"</p>
+          <h3 class="animate__animated animate__backInDown animate__delay-2s">Encontrá la combinación ideal para maximizar tu rendimiento y comodidad.</h3>
+          <p>Bienvenido a nuestra completa guía de compra, diseñada para ayudarte a tomar decisiones informadas al adquirir tu teclado, switch y mouse pad. Aquí vas a encontrar consejos expertos, recomendaciones y detalles clave que te guiarán hacia la elección perfecta. Ya sea que busques mejorar tu experiencia de gaming o aumentar tu productividad en el trabajo, estamos aquí para brindarte la información necesaria. Preparate para descubrir una nueva dimensión de rendimiento y comodidad. ¡Comencemos!"</p>
           </article>
         
     </section>
 
+    <section class="icono-whatsapp">
+      <div class="icono-container">
+        <a href="https://api.whatsapp.com/send?phone=+54xxxx" target="_blank" class="whatsapp-icon hidden">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+     </section>
+
     <section class="guias">
 
-      <article class="guia-teclado">
-        <div class="contenedor-titulo">
-          <button class="btn btn-teclados" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"> Guía para Teclados</button>
+      <article class=" accordion guia-teclado" id="guia-teclado">
+        <div class="contenedor-titulo acordation-item" >
+          <button class="btn btn-teclados accordion-button animate__animated animate__shakeX animate__delay-3s" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="guia-teclados  "> Guía para Teclados </button>
         </div>
-        <div class="contenido-oculto collapse collapse-vertical" id="collapseWidthExample">
+        <div class="contenido-oculto collapse show" id="collapse1" aria-labelledby="guia-teclados" data-bs-parent="#collapse1">
           <h4 class="descripcion-teclados">Los teclados son una herramienta esencial en nuestras actividades diarias, ya sea para trabajar, jugar o simplemente escribir. Aquí exploraremos algunos aspectos clave para ayudarte a elegir el teclado perfecto:</h4>
-          <h5>Tipo de teclado:</h5>
-          <div class="tipo">
+          <h5 class="">Tipos de teclado:</h5>
+          <div class=" tipo">
             <p>Teclado de membrana: Estos teclados utilizan una membrana de goma debajo de las teclas para registrar los pulsos. Son económicos, silenciosos y ofrecen una experiencia de escritura suave. Son ideales para uso diario y tareas de escritura general.</p>
             <p>Teclado mecánico: Estos teclados utilizan interruptores mecánicos individuales debajo de cada tecla. Proporcionan una respuesta táctil y un clic audible distintivo. Son más duraderos y adecuados para jugadores y escritores que valoran la precisión y la retroalimentación táctil.</p>
           </div>
           <h5>Diseño y tamaño del teclado:</h5>
-          <div class="diseño">
+          <div class="diseño multi-collapse" id="multiCollapse2">
             <ul>
               <li>Tamaño completo: Incluye el teclado numérico y todas las teclas de función estándar. Son ideales para aquellos que requieren acceso rápido a las funciones adicionales.</li>
               <li>Tenkeyless (TKL): Este diseño elimina el teclado numérico, lo que resulta en un teclado más compacto. Son populares entre los jugadores y aquellos que prefieren un espacio de escritorio más reducido.</li>
@@ -88,7 +98,7 @@
             </ul>
           </div>
           <h5>Características adicionales del teclado:</h5>
-          <div class="caracteristicas">
+          <div class="caracteristicas multi-collapse" id="multiCollapse3">
             <ul>
               <li>Retroiluminación: Muchos teclados ofrecen opciones de retroiluminación, lo que permite trabajar o jugar en entornos oscuros.</li>
               <li>Teclas programables: Algunos teclados tienen teclas personalizables que te permiten asignar macros o comandos específicos para una mayor eficiencia.</li>
@@ -129,7 +139,7 @@
 
         </div>
         <div class="videos-teclado">
-          <a href="https://www.youtube.com/embed/tn5yGCOpkM0"><h5 class="g-h5">Videos recomendados sobre Teclados</h5></a>
+          <a href="https://www.youtube.com/embed/tn5yGCOpkM0"><h5 class="g-h5">Videos recomendados</h5></a>
           <div class="iframes-container">
             <iframe src="https://www.youtube.com/embed/tn5yGCOpkM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/HB309x2bU4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -138,13 +148,13 @@
         </div>
       </article>
 
-      <article class="guia-switch">
+      <article class="guia-switch accordion">
         <div class="contenedor-titulo">
-          <button class="btn btn-switches" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"> Guía para Switches</button>
+          <button class="btn btn-switches accordion-button animate__animated animate__shakeX animate__delay-4s" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="guia-switch"> Guía para Switches  </button>
         </div>
-        <div class="contenido-oculto collapse collapse-vertical" id="collapseWidthExample">
+        <div class="contenido-oculto collapse" id="collapse2" aria-labelledby="guia-swicth" data-bs-parent="#collapse2">
           <h4 class="descripcion-switches">Los switches son los interruptores responsables de la sensación táctil y la respuesta de las teclas en un teclado mecánico. Aquí exploraremos algunas características importantes que debes considerar al elegir tus switches:</h4>
-          <h5>Táctilidad del switch:</h5>
+          <button class="btn btn-titulo">Táctilidad del switch:</button>
           <div class="tipo">
             <p>Táctil: Estos switches proporcionan una retroalimentación táctil perceptible cuando se presionan las teclas. Es posible sentir y escuchar un clic distintivo, lo que ayuda a confirmar que se ha registrado la pulsación.</p>
             <p>Lineal: Estos switches no tienen retroalimentación táctil, lo que significa que no hay un clic perceptible ni resistencia adicional al presionar la tecla. Ofrecen una experiencia de escritura suave y silenciosa.</p>
@@ -183,7 +193,7 @@
 
         </div>
         <div class="videos-switch">
-          <a href="https://www.youtube.com/embed/DZzsR1u493M"><h5 class="g-h5">Videos recomendados sobre Switches</h5></a>
+          <a href="https://www.youtube.com/embed/DZzsR1u493M"><h5 class="g-h5">Videos recomendados</h5></a>
           <div class="iframes-container">
             <iframe class="g-iframe" src="https://www.youtube.com/embed/DZzsR1u493M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe class="g-iframe" src="https://www.youtube.com/embed/-l6WvxuxcqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -192,11 +202,13 @@
         </div>
       </article>
 
-      <article class="guia-mousepad">
+      <article class="guia-mousepad accordion" id="guia-mousepad">
         <div class="contenedor-titulo">
-          <button class="btn btn-mousepads" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">Guía para Mouse Pads</button>
+          <button class="btn btn-mousepads accordion-button animate__animated animate__shakeX animate__delay-5s" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="guia-mousepad">Guía para Mouse Pads
+            <i class="fa-sharp fa-solid fa-circle-chevron-down fa-xs"></i>
+          </button>
         </div>
-        <div class="contenido-oculto collapse collapse-vertical" id="collapseWidthExample">
+        <div class="contenido-oculto collapse collapse-vertical" id="collapse3">
           <h4 class="descripcion-mousepads">Un mouse pad adecuado puede marcar la diferencia en la precisión y el control de tu mouse. Aquí te proporcionamos información sobre los diferentes aspectos a considerar:</h4>
           <h5>Superficie del mouse pad:</h5>
           <div class="tipo">
@@ -237,7 +249,7 @@
 
         </div>
         <div class="videos-mousepad">
-          <a href="https://www.youtube.com/embed/-1g--08fvVo"><h5 class="g-h5">Videos recomendados sobre Mouse pads</h5></a>
+          <a href="https://www.youtube.com/embed/-1g--08fvVo"><h5 class="g-h5">Videos recomendados</h5></a>
           <div class="iframes-container">
             <iframe src="https://www.youtube.com/embed/-1g--08fvVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FtYpE44odUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,0 +1,129 @@
+
+// pagina teclados
+
+// banner teclados
+.banner-teclados{
+    background-image: url(../images/working/w6.jpg);
+    height: 70svh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 3rem;
+    @media (max-width:800px){
+        padding-top: 1rem;
+    }
+    .titulo-banner{
+        background-color: #ddd8;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin: 0px 20px;
+        color: $rojo-oscuro;
+    }
+    .subtitulo-banner{
+        color: $gris-claro;
+        background-color: #3337;
+        max-width: fit-content;
+        border-radius: 5px;
+        margin: 30px 20px;
+        padding: 10px 20px;
+    }
+}
+
+// Galeria teclados
+
+.child-page-listing{
+    margin: 8rem auto;
+    max-width: 1500px;
+}
+
+.teclados-title{
+    text-align: center;
+    background-color: $rojo-oscuro;
+    padding: 0.5rem;
+    margin: 10px 5px;
+    border-radius: 5px;
+    font-size: 2rem;
+    color: $fondo;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  padding: 0 1em;
+  /* hover styles */
+  .location-listing {
+    position: relative;
+    .location-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .5s;
+        background: rgba(90,0,10,0.4);
+        color: white;
+        
+        /* posicionar el texto en t' medio*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .location-image {
+      line-height: 0;
+      overflow: hidden;
+      border-radius: 5px 5px 0 0;
+      img {
+        width: 300px;
+        height: 169px;
+        width: 100%; /*necesidad de sobrescribir las dimensiones en línea */
+        inline-size: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        filter: blur(0px);
+        transition: filter 0.3s ease-in;
+        transform: scale(1.1);
+        transform: scaleY(center);
+      }
+    }
+    .nobre-precio{
+        display: flex;
+        justify-content: space-between;
+        background-color: $gris-oscuro;
+        color: $gris-claro;
+        padding: 20px;
+        border-radius: 0 0 5px 5px;
+        .nombre-teclado{
+            margin-left: 1rem;
+        }
+        .precio-teclado{
+            margin-right: 1rem;
+        }
+    }
+  }
+}
+
+.location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+  
+  
+/*para dispositivos táctiles*/
+@media (hover: none) { 
+    .location-title {
+      opacity: 1;
+    }
+    .location-image img {
+      filter: blur(2px);
+    }
+  }

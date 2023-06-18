@@ -1,0 +1,44 @@
+
+  
+
+/* NABVAR */
+main{
+    margin-top: 86px;
+  }
+  
+ 
+  
+header{
+  .navbar-brand{
+    color: $gris-claro;
+    transition: all 0.5s;
+  }
+  .navbar-brand:hover{
+    color: $rojo-oscuro;
+    transform: scale(1.1);
+  }
+  .dropdown-item:hover{
+    background-color: #f0f0f0;
+  }
+
+  .nav-link:hover{
+    color: $rojo-claro;
+  }
+
+  .logo-img{
+  border-radius: 50px;
+  height: 60px;
+  margin-right: 20px;
+  }
+
+  .dropdown-item:hover{
+    background-color: $rojo-oscuro;
+    color: #fdfdfd;
+    border-radius: 0 2rem;
+  }
+  .dropdown-menu{
+    padding: 0;
+  }
+}
+
+

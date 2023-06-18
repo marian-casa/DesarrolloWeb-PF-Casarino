@@ -1,0 +1,61 @@
+
+// barra lateral
+body::-webkit-scrollbar {
+    width: 1em;               /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: $gris-oscuro;        /* color of the tracking area */
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #c7c8c9;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
+  }
+
+// barra horizontal
+.nuevos-productos::-webkit-scrollbar {
+    width: 1rem;
+    height: 1.5rem;               /* width of the entire scrollbar */
+  }
+  
+.nuevos-productos::-webkit-scrollbar-track {
+    background: $gris-oscuro;        /* color of the tracking area */
+  }
+  
+.nuevos-productos::-webkit-scrollbar-thumb {
+    background-color: #c7c8c9;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid $gris-azulado;  /* creates padding around scroll thumb */
+  }
+
+
+.icono-container{
+  .whatsapp-icon {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+    transition: all .3s;
+  }
+  .whatsapp-icon:hover{
+    transform: scale(1.08);
+  }
+  .whatsapp-icon.visible {
+    opacity: 1;
+  }
+  
+}

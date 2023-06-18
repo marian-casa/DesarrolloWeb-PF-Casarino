@@ -1,0 +1,362 @@
+
+/* pagina SOBRE NOSOTROS */
+  /* SOBRE NOSOTROS */
+
+  .primera-seccion-sn{
+    justify-content: justify;
+    .cabecera{
+        background-image: url(../images/working/w1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #3337;
+        height: 50vh;
+        padding: 2em;
+        border-radius: 1rem;
+        @media (max-width:600px){
+            padding: 0.5em;
+        }
+        .sn-h2{
+            font-size: 1.8rem;
+            color: $fondo;
+            background-color: #6669;
+            border-radius: 1rem;
+            text-align: center;
+            margin: 0 5rem;
+            padding: 20px;
+            @media (max-width:600px){
+                margin: 0 10px;
+                font-size: 1.5rem;
+            }
+        }
+    }   
+    .contenido{
+        margin: 8rem auto;
+        max-width: 1200px;
+        padding: 2rem;
+        border-radius: 1rem;
+        font-size: 1.1rem;
+        color: $fondo;
+        @media (max-width: 400px){
+            font-size: 0.8rem;
+        }
+        @media (max-width:550px){
+            margin: 1rem 0.5rem;
+            font-size: 0.9rem;
+            .sn-logo{
+                align-self: center;
+                height: 40svw;
+                width: fit-content;
+            }
+        }
+    } 
+    .logo-descripcion{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 30px 100px;
+        background-color: $negro-claro;
+        color: $gris-claro;
+        border-radius: 20px;
+        font-size: 20px;
+        margin: 10rem auto;
+        max-width: 1300px;
+        @media (max-width: 400px){
+            font-size: 14px;
+            margin: .5rem;
+        }
+        @media (max-width: 1024px){
+            flex-direction: column;
+            padding: 10px;
+            font-size: 17px;
+        }
+        .sn-logo{
+            height: auto;
+            width: 300px;
+            align-self: center;
+            border-radius: 200px;
+            transition: all 0.3s;
+            margin: 2rem;
+            @media (max-width: 400px){
+                width: 200px;
+            }
+        }
+        .sn-logo:hover{
+            transform: scale(1.1);
+            margin-right: 10px;
+        }
+        .texto-logo{
+            align-self: center;
+            margin: 10px;
+        }
+        h3{
+            text-align: center;
+            color: #e75e5e;
+        }
+        
+    }
+
+    .area-de-trabajo{
+        background-image: url(../images/working/w5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 90svh;
+        padding: 2rem;
+        border-radius: 1em;
+        margin: 0 auto;
+        max-width: 1400px;
+        .titulo-oficinas{
+            color: $fondo;
+            background-color: #3339;
+            width: fit-content;
+            margin: 2rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            @media (max-width:480px){
+                margin: 2rem 0;
+            }
+        }
+        .subtitulo-oficinas{
+            background-color: #2229;
+            width: fit-content;
+            color: $gris-claro;
+            margin: 0 2.1rem;
+            border-radius: 1.2rem;
+            padding: 1rem;
+            @media (max-width:480px){
+                margin: 0 1.1rem;
+            }
+        }
+    }
+}
+/* contacto */
+.form {
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    padding: 0 1.5em;  
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    max-width: 1300px;
+  }
+  
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 8rem;
+  }
+  
+.sin-estilo{
+    list-style: none;
+    padding: 0;
+  }
+  
+.logo {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 5rem;
+  }
+  
+.logo span {
+    color: #9B3F3F;
+  }
+  
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    border-radius: 2rem;
+  }
+  
+.contact-wrapper > * {
+    padding: 1em;
+  }
+  
+  
+  
+.contact-form {
+    background: #222222;
+    border-radius:2rem 2rem 0 0;
+    height: 680px;
+  }
+  
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+.contact-form form label {
+    display: block;
+  }
+  
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+  }
+  
+.contact-form form .block {
+    grid-column: 1 / 3;
+  }
+  
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #9B3F3F;
+  }
+  
+.contact-form form button {
+    background: #9B3F3F;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 1rem;
+    transition: all 0.5s;
+  }
+  
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #9B3F3F;
+    font-size: 1.3rem;
+    padding: 0.6rem;
+    outline: 0;
+    transform: scale(1.03);
+  }
+  
+  /* INFORMACIÓN DE CONTACTO */
+.contact-info {
+    background: #000;
+    border-radius: 0 0 2rem 2rem ;
+  }
+  
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  /* TAMAÑO GRANDE */
+@media(min-width: 939px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+    
+    .contact-form {
+      background: #222222;
+      border-radius: 2rem 0 0 2rem;
+    }
+    .contact-info {
+      border-radius: 0 2rem  2rem 0;
+    }
+}
+  
+@media screen and (max-width: 520px) {
+  .content {
+    padding: 0 0 24px 0;
+  }
+  .contact-form {
+    border-radius:2rem 2rem 0 0;
+    height: 850px;
+  }
+  .contact-info {
+    border-radius:  0 0 2rem  2rem;
+  }
+  .contact-form form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .contact-form form .block {
+    grid-column: 1;
+  }
+  .sn-h3{
+    padding: 0 0 20px;
+    border-bottom: 1px solid #626263;
+    margin-bottom: 20px;
+  }
+  .logo{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+}
+  
+  
+/* ¿Tienes dudas? */
+.accordion-sn {
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+.accordion-item{
+    margin: 2px;
+  }
+  
+.accordion-button {
+    background-color: #3f474f;
+    color: #c0c0c0;
+    border: none;
+  }
+  
+.accordion-button:hover {
+    background-color: #212529;
+  }
+  
+.accordion-button:not(.collapsed) {
+    background-color: #c0c0c0;
+  }
+  
+.accordion-body {
+    background-color: #f0f0f0;
+    color: #333333;
+    font-size: 14px;
+  }
+  
+.accordion-header {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
+  }
+  
+.acordion-title{
+    text-align: center;
+    background-color: #9B3F3F;
+    color: #cccccc;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #c7c8c9;
+  }
+  
+/* ¿sigues con dudas? */
+  
+.contact-h2{
+    margin: 0px;
+    color: #cccccc;
+  }
+  
+.contact-title{
+    text-align: center;
+    background-color: #9B3F3F;
+    border-radius:  10px 10px 0 0;
+    margin: 0 auto;
+    margin-top: 15rem;
+    max-width: 1300px;
+  }
+  
+.sn-h3{
+    text-align: center;
+    padding-bottom: 5rem;
+  
+  }

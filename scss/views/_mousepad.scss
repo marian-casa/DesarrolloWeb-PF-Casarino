@@ -1,0 +1,39 @@
+
+// Pagina Mouse pad
+// Banner Mouse Pad
+.banner-mousepad{
+    background-image: url(../images/pad/superlight.jpg);
+    height: 70svh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    @media (max-width:800px){
+        padding-top: 1rem;
+    }
+    .titulo-banner{
+        background-color: #ddd8;
+        width: fit-content;
+        padding: 5px 15px;
+        border-radius: 2px;
+        margin: 0px 20px;
+        color: $rojo-claro;
+    }
+    .subtitulo-banner{
+        color: $gris-claro;
+        background-color: #3338;
+        max-width: fit-content;
+        border-radius: 5px;
+        margin: 30px 20px;
+        padding: 10px 20px;
+    }
+}
+
+// Galeria Mouse pad
+.nombre-pad{
+    margin-left: 1rem;
+}
+.precio-pad{
+    margin-right: 1rem;
+}
+
